@@ -1,7 +1,8 @@
 ---
 title: git命令
 date: 2022-07-12 09:56:50
-tags:
+categories:
+- git
 ---
 
 
