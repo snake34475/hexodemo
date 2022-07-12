@@ -6,10 +6,12 @@
 title: snake34475
 subtitle: ''
 description: 'snake博客网站'
+favicon: //rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7odq5bbut1kh16a61qbd8mi6.png
 keywords:
 author: tengyao
 language: en
 timezone: ''
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -98,11 +100,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: tengyao
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:snake34475/hexodemo.git
-  branch: master
+  branch: develop
