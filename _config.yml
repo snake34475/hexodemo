@@ -15,8 +15,9 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wang-tengyao.gitee.io/snake34475.github.io
-root: /snake34475.github.io
+# url: http://wang-tengyao.gitee.io
+url: http://yoursite.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -106,6 +107,6 @@ theme: volantis
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # repo: git@github.com:snake34475/snake34475.github.io.git
-  repo: git@gitee.com:wang-tengyao/snake34475.github.io.git
+  repo: git@github.com:snake34475/snake34475.github.io.git
+  # repo: git@gitee.com:wanwhvjg-tengyao/wang-tengyao.git
   branch: develop
