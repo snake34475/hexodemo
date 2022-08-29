@@ -6,7 +6,7 @@
 title: snake34475
 subtitle: ''
 description: 'snake博客网站'
-favicon: //rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7odq5bbut1kh16a61qbd8mi6.png
+favicon: //upload.onestyle.top/image/2022/07/12/wu_1g7odq5bbut1kh16a61qbd8mi6.png
 keywords:
 author: tengyao
 language: en
@@ -16,7 +16,7 @@ timezone: ''
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: http://wang-tengyao.gitee.io
-url: http://yoursite.com
+url: http://onestyle.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
