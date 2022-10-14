@@ -86,6 +86,11 @@ git stash pop // 再将刚才暂存到“栈”里面的代码取出来,
 
 删除远程分支: git push origin --delete [branchname]
 ```
+## commit之后发现错了不想提交
+``` 
+git reset HEAD -- . //一次性撤销所有放入残存去的文件
+git reset HEAD -- filename //撤销指定目标文件
+```
 
 ## 回退到上一个版本
 
