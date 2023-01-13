@@ -7,7 +7,9 @@ window安装sonaar
 
 > 最好使用docker装，因为需要java特定环境，
 
-## docker安装
+## docker安装方法
+
+### 安装sonarqube
 
 [官网教学](https://docs.sonarqube.org/latest/try-out-sonarqube/)
 
@@ -33,11 +35,11 @@ $ docker pull sonarqube
 
 ![image-20230113140319493](https://s2.loli.net/2023/01/13/EmRhFQAypq8YIG2.png)
 
-​	6.安装sonar-scanner
+### 	安装sonar-scanner
 
 [sonarScanner官网教程](https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/)，docker方法没有试，我于window64位安装解压后，环境变量path添加bin之后安装成功
 
-​	7.创建项目
+### 	创建项目
 
 ![image-20230113140420129](https://s2.loli.net/2023/01/13/PLyBZIetKxmGwvF.png)
 
@@ -54,4 +56,3 @@ $ docker pull sonarqube
 ​	8.窗口运行之后返回http://localhost:9000/页面，可以看到bug
 
 ![image-20230113141351314](https://s2.loli.net/2023/01/13/QtyFKAz6BTGmXHr.png)
-
