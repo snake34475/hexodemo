@@ -22,7 +22,7 @@ sidebar:
     # ---------------------------------------
     # blogger info widget
     blogger:
-      avatar: http://upload.onestyle.top/image/2022/07/12/wu_1g7olejcc86jlq4nlb1qeeg2n6.jpeg #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: https://s2.loli.net/2023/02/01/QT9rs6EoO7Xq4I5.jpg #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       title: 滕笑然
     donate:
       class: qrcode
@@ -34,11 +34,11 @@ sidebar:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: //upload.onestyle.top/image/2022/07/12/wu_1g7odq5bbut1kh16a61qbd8mi6.png
-    icon: //upload.onestyle.top/image/2022/07/12/wu_1g7odlq2p6f7ekq170u1msu8g56.png
+    img: https://s2.loli.net/2023/02/01/KqsmDBXC6PYHR3a.png
+    icon: https://s2.loli.net/2023/02/01/XnWLTM37mYyF1Q6.png
 
 cover:
-  logo: http://upload.onestyle.top/image/2022/07/12/wu_1g7oeutcd1lb5u27133fgtqd579.png  #http://rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7o7jj1s2kiu6613vvedo1cob6.jpeg
+  logo: https://s2.loli.net/2023/02/01/3zOucySxfkNnhI5.png #http://rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7o7jj1s2kiu6613vvedo1cob6.jpeg
   title: 滕笑然 #onestyle #'瑔寒科技'
 
 ### 自定义右键 新
