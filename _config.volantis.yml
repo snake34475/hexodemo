@@ -31,6 +31,12 @@ sidebar:
       images:
 #        - https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
         - https://s2.loli.net/2023/05/24/T3Fe4XuIrdCRVn5.jpg
+    lastupdate:
+      class: lastupdate
+      display: [ desktop, mobile ]
+      header:
+        icon: fa-solid fa-clock WISTERIA
+        title: 最近更新
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
@@ -117,18 +123,57 @@ rightmenus:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
 
 #评论系统
+#comments:
+#  service: beaudar
+#  # beaudar
+##   https://beaudar.lipk.org/
+#  beaudar:
+#    repo: snake34475/snake34475.github.io
+#    issue-term: pathname
+#    issue-number:
+#    branch: main
+#    position: top
+#    order: desc
+#    theme:
+#      light: github-light
+#      dark: github-dark
+#    label: ✨💬✨
+
+
 comments:
-  service: beaudar
-  # beaudar
-  # https://beaudar.lipk.org/
-  beaudar:
-    repo: snake34475/snake34475.github.io
-    issue-term: pathname
-    issue-number:
-    branch: main
-    position: top
-    order: desc
-    theme:
-      light: github-light
-      dark: github-dark
-    label: ✨💬✨
+  service: giscus
+  # giscus
+  # https://giscus.app
+  # https://github.com/laymonage/giscus
+  giscus:
+    # 以下配置按照 yml 格式增删填写即可
+     repo: snake34475/snake34475.github.io
+     repo-id: R_kgDOHo7Tiw
+     category: General
+     category-id: DIC_kwDOHo7Ti84CWtGh
+     mapping: "pathname"
+     reactions-enabled: "1"
+     emit-metadata: "0"
+     lang: "zh-CN"
+     loading: 'lazy'
+    # 以上配置按照 yml 格式增删填写即可
+     theme:
+        light: "light" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+        dark: "dark" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, analytics, info, copyright]
+  social:
+    - icon: #fa-solid fa-rss
+      url:
+    # or
+    - img:
+      url:
+    # or
+    - avatar:
+      url:
+  # site source
+  source: https://github.com/volantis-x/volantis-docs/
+  # site copyright
+  copyright: '豫ICP备2022018466号-1'
