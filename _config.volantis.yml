@@ -24,7 +24,13 @@ sidebar:
     blogger:
       avatar: http://upload.onestyle.top/image/2022/07/12/wu_1g7olejcc86jlq4nlb1qeeg2n6.jpeg #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       title: 滕笑然
-
+    donate:
+      class: qrcode
+      display: [desktop, mobile] # [desktop, mobile]
+      height: 200px  # Automatic height if not set
+      images:
+#        - https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - https://s2.loli.net/2023/05/24/T3Fe4XuIrdCRVn5.jpg
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
@@ -52,22 +58,6 @@ rightmenus:
     - menus.darkMode
     - plugins.articlePage
     - music
-  ############################
-  # - {id: '', name: '', icon: '', link: '', event: '', group: ''}
-  # id: 唯一值
-  # name: 用于菜单名称显示
-  # icon: 用于菜单图标显示
-  # link: 跳转链接
-  # event: 事件，当输入内容不为内置事件时，作 JavaScript 代码执行
-  # group: 菜单项所处分组名称
-  # 注：
-  # 1. link/event 二选一，同时出现时仅处理 link
-  # 2. 内置事件列表： copyText, copyLink, copyPaste, copyAll, copyCut, copyImg, printMode, readMode
-  # 3. 内置组列表：navigation, inputBox, seletctText, elementCheck, elementImage, articlePage
-  # 4. plugins 列允许自定义组内项目
-  # 5. menus   列允许自定义组及其内容
-  # 6. 除 navigation 外的内置组，在显示时会隐藏含 link 属性的菜单项
-  ###########################
   # 基础项设置
   options:
     # 图标前缀 fa-solid, fa-regular, fa-light, fa-thin, fa-duotone, fa-brands
@@ -125,3 +115,20 @@ rightmenus:
       - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
+
+#评论系统
+comments:
+  service: beaudar
+  # beaudar
+  # https://beaudar.lipk.org/
+  beaudar:
+    repo: snake34475/snake34475.github.io
+    issue-term: pathname
+    issue-number:
+    branch: main
+    position: top
+    order: desc
+    theme:
+      light: github-light
+      dark: github-dark
+    label: ✨💬✨
