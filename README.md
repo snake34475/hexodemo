@@ -23,7 +23,7 @@ npm i -g hexo
 #运行
 hexo s
 ```
-## 提交
+## 正常提交
 ```shell
 #清楚缓存和public
 hexo clean
@@ -31,4 +31,9 @@ hexo clean
 hexo g 
 #自动生成静态文件并设定指定仓库
 hexo d
+```
+
+## 整合提交
+```shell
+yarn sync
 ```

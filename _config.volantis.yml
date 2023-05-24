@@ -18,6 +18,7 @@ custom_css:
 
 sidebar:
   # 侧边栏组件库
+  for_page: [blogger, category, tagcloud,lastupdate,webinfo,donate]
   widget_library:
     # ---------------------------------------
     # blogger info widget
@@ -31,6 +32,41 @@ sidebar:
       images:
 #        - https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
         - https://s2.loli.net/2023/05/24/T3Fe4XuIrdCRVn5.jpg
+    webinfo:
+      class: webinfo
+      display: [ desktop ]
+      header:
+        icon: fa-solid fa-award
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: '文章数目：'
+          unit: '篇'
+        runtime:
+          enable: true
+          data: '2020/01/01'    # 填写建站日期
+          text: '已运行时间：'
+          unit: '天'
+        wordcount:
+          enable: true
+          text: '本站总字数：'
+          unit: '字'
+        visitcounter:
+          service: leancloud  # busuanzi, leancloud
+          siteuv:
+            enable: true
+            text: '本站访客数：'
+            unit: '人'
+          sitepv:
+            enable: true
+            text: '本站总访问量：'
+            unit: '次'
+        lastupd:
+          enable: true
+          friendlyShow: true    # 更友好的时间显示
+          text: '最后活动时间：'
+          unit: '日'
     lastupdate:
       class: lastupdate
       display: [ desktop, mobile ]
@@ -110,6 +146,7 @@ rightmenus:
     articlePage:
       - {id: 'printMode', name: '打印页面', icon: 'fa-solid fa-print', event: 'printMode', group: 'articlePage'}
       - {id: 'readMode', name: '阅读模式', icon: 'fa-solid fa-book-open', event: 'readMode', group: 'articlePage'}
+
   # 右键自定义菜单区域
   menus:
     link:
@@ -121,25 +158,40 @@ rightmenus:
       - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
+      # 分享
 
-#评论系统
-#comments:
-#  service: beaudar
-#  # beaudar
-##   https://beaudar.lipk.org/
-#  beaudar:
-#    repo: snake34475/snake34475.github.io
-#    issue-term: pathname
-#    issue-number:
-#    branch: main
-#    position: top
-#    order: desc
-#    theme:
-#      light: github-light
-#      dark: github-dark
-#    label: ✨💬✨
-
-
+article:
+  # 文章列表页面的文章卡片布局方案
+  preview:
+    scheme: landscape # landscape
+    # pin icon for post
+    pin_icon: volantis-static/media/twemoji/assets/svg/1f4cc.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    # auto generate title if not exist
+    auto_title: true # false, true
+    # auto generate excerpt if not exist
+    auto_excerpt: true # false, true
+    # hide excerpt
+    hide_excerpt: false
+    # show split line or not
+    line_style: solid # hidden, solid, dashed, dotted
+    # show author
+    author: false # true, false
+    # show readmore button
+    readmore: auto # auto, always
+  # 文章详情页面的文章卡片本体布局方案
+  body:
+    top_meta: [author, category, date, counter,artalkcount,wordcount] #启用评论数量需在此添加
+    bottom_meta: [updated, tags, share]
+    meta_library:
+      date:
+        icon: fa-solid fa-calendar-alt
+        title: '发布于：'
+        format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
+    # 文章更新日期
+    updated:
+      icon: fa-solid fa-edit
+      title: '更新于：'
+      format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
 comments:
   service: giscus
   # giscus
@@ -162,9 +214,16 @@ comments:
         dark: "dark" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
 
 
+analytics:
+  busuanzi: #volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  leancloud: # 请使用自己的 id & key 以防止数据丢失
+    app_id: k8rusvd7HZ9hWyQcYsdsdP80-MdYXbMMI
+    app_key: ldqc7b4KZR37ZVBGdfMRi7Vn
+    custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
+
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, analytics, info, copyright]
+  layout: [aplayer, social, license, analytics, info, copyright,wordcount]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -178,3 +237,8 @@ site_footer:
   source: https://github.com/volantis-x/volantis-docs/
   # site copyright
   copyright: '豫ICP备2022018466号-1'
+
+plugins:
+  # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
+  wordcount:
+    enable: true
