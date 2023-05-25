@@ -9,8 +9,8 @@ description: 'tengyao博客网站'
 favicon: https://s2.loli.net/2023/02/01/KqsmDBXC6PYHR3a.png
 keywords:
 author: tengyao
-language: en
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

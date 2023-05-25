@@ -45,7 +45,7 @@ sidebar:
           unit: '篇'
         runtime:
           enable: true
-          data: '2020/01/01'    # 填写建站日期
+          data: '2020/07/11'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
@@ -73,16 +73,83 @@ sidebar:
       header:
         icon: fa-solid fa-clock WISTERIA
         title: 最近更新
+
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
     img: https://s2.loli.net/2023/02/01/KqsmDBXC6PYHR3a.png
     icon: https://s2.loli.net/2023/02/01/XnWLTM37mYyF1Q6.png
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
 
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+      rows:
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 暗黑模式 # 可自定义
+      icon: fa-solid fa-moon # 可自定义
+      toggle: darkmode
+
+  search: Search...   # Search bar placeholder
+############################### Navigation Bar ############################### > end
+
+
+############################### Cover ############################### > start
 cover:
-  logo: https://s2.loli.net/2023/02/01/3zOucySxfkNnhI5.png #http://rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7o7jj1s2kiu6613vvedo1cob6.jpeg
   title: 滕笑然 #onestyle #'瑔寒科技'
+  height_scheme: full # full, half
+  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter 'cover: true'
+  background: https://fastly.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
+  # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+  # logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  logo: https://s2.loli.net/2023/02/01/3zOucySxfkNnhI5.png #http://rew00265f.hb-bkt.clouddn.com/image/2022/07/12/wu_1g7o7jj1s2kiu6613vvedo1cob6.jpeg
+  # logo: https://m.qpic.cn/psc?/V51IQyF22qh0J90kAkeQ0BFJ0r0kyl5g/ruAMsa53pVQWN7FLK88i5oJ0fwat5ZSko5GHpmTlvi08pz8EhfkUy0P82jJFESEo3Xvu*YRbq5MGXxVY1a*aGvAacycy.UlMxjQqQOctrxE!/b&bo=OAQ4BAAAAAABByA!&rf=viewer_4&t=5
+  subtitle: ''
+  search: A Wonderful Theme for Hexo # search bar placeholder
+  features:
+    - name: 博客
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /
+    - name: 导航
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f389.svg  # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: http://nav.onestyle.top/
+    - name: 笔记
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f516.svg  # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: https://logseq.onestyle.top/
+    - name: 友链
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f396.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
+      url: /friends/
+    - name: 归档
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg
+      url: /archives/
+    - name: 源码
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: https://github.com/snake34475/snake34475.github.io/
 
+############################### Cover ############################### > end
 ### 自定义右键 新
 rightmenus:
   enable: true
@@ -180,7 +247,7 @@ article:
     readmore: auto # auto, always
   # 文章详情页面的文章卡片本体布局方案
   body:
-    top_meta: [author, category, date, counter,artalkcount,wordcount] #启用评论数量需在此添加
+    top_meta: [author, category, date, counter,artalkcount,wordcount,walinecount] #启用评论数量需在此添加
     bottom_meta: [updated, tags, share]
     meta_library:
       date:
