@@ -1,5 +1,5 @@
 <div class="post post-v3 white-box reveal <%- theme.custom_css.body.effect.join(' ') %>"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="<%- post.permalink %>">
+  <link itemprop="mainEntityOfPage" href="<%- decodeURI(post.permalink) %>">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="<%- config.title %>">
   </span>
@@ -21,7 +21,7 @@
     showCat = true;
   }
   let showReadmore = false;
-  if (theme.article.preview.readmore == 'always' || theme.article.preview.auto_excerpt || ((post.readmore != false) && (post.excerpt || post.description || post.link))) {
+  if (theme.article.preview.readmore == 'always' || ((post.readmore != false) && (theme.article.preview.auto_excerpt || post.excerpt || post.description || post.link))) {
     showReadmore = true;
   }
   %>

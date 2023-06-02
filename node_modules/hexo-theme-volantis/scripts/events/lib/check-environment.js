@@ -12,9 +12,9 @@ module.exports =(hexo) => {
         CheckError(hexo,`node.js: ${err}`);
       }
       let nodeVersion = stdout.match(/v(\d*)/)[1];
-      if (nodeVersion<14) {
+      if (nodeVersion<16) {
         hexo.log.info(`node.js 版本：${stdout}`);
-        CheckError(hexo,`node.js 版本过低，请升级至 v14.x 以上版本！`);
+        CheckError(hexo,`node.js 版本过低，请升级至 v16.x 及以上版本！`);
       }else{
         exec('hexo -v', (err, stdout, stderr) => {
           if (err) {
@@ -57,6 +57,10 @@ Hexo: 5.4 ~ 6.x
 hexo-cli: 4.3 ~ latest
 node.js: 16.x LTS ~ latest LTS
 npm: 8.x ~ latest LTS
+============================================================
+# 当前 Debug 调试模式
+debug: env
+关闭调试模式主题配置文件设置 debug: false
 ============================================================`);
   throw new Error('环境配置检查失败！| Environment configuration check failed!');
 }
@@ -67,6 +71,10 @@ function CheckConfError(hexo,msg) {
 配置文件检查失败！| Configuration check failed!
 ============================================================
 ${msg}
+============================================================
+# 当前 Debug 调试模式
+debug: env
+关闭调试模式主题配置文件设置 debug: false
 ============================================================`);
   throw new Error('配置文件检查失败！| Configuration check failed!');
 }

@@ -29,10 +29,10 @@ const locationHash = () => {
     if (target) {
       setTimeout(() => {
         if (window.location.hash.startsWith('#fn')) { // hexo-reference https://github.com/volantis-x/hexo-theme-volantis/issues/647
-          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant', observer:true })
+          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant', observer: true })
         } else {
           // 锚点中上半部有大片空白 高度大概是 volantis.dom.header.offsetHeight
-          volantis.scroll.to(target, { addTop: 5, behavior: 'instant', observer:true })
+          volantis.scroll.to(target, { addTop: 5, behavior: 'instant', observer: true })
         }
       }, 1000)
     }
@@ -70,6 +70,15 @@ const VolantisApp = (() => {
     volantis.dom.$(document.getElementById("scroll-down"))?.on('click', function () {
       fn.scrolltoElement(volantis.dom.bodyAnchor);
     });
+
+    // 如果 sidebar 为空，隐藏 sidebar。
+    const sidebar = document.querySelector("#l_side")
+    if (sidebar) {
+      const sectionList = sidebar.querySelectorAll("section")
+      if (!sectionList.length) {
+        document.querySelector("#l_main").classList.add("no_sidebar")
+      }
+    }
 
     // 站点信息 最后活动日期
     if (volantis.GLOBAL_CONFIG.sidebar.for_page.includes('webinfo') || volantis.GLOBAL_CONFIG.sidebar.for_post.includes('webinfo')) {
@@ -276,31 +285,73 @@ const VolantisApp = (() => {
   fn.setGlobalHeaderMenuEvent = () => {
     if (volantis.isMobile) {
       // 【移动端】 关闭已经展开的子菜单 点击展开子菜单
-      document.querySelectorAll('#l_header .m-phone li').forEach(function (e) {
-        if (e.querySelector(".list-v")) {
+      document.querySelectorAll('#l_header .m-phone li').forEach(function (_e) {
+        if (_e.querySelector(".list-v")) {
           // 点击菜单
-          volantis.dom.$(e).click(function (e) {
+          volantis.dom.$(_e).click(function (e) {  
             e.stopPropagation();
-            // 关闭已经展开的子菜单
-            e.currentTarget.parentElement.childNodes.forEach(function (e) {
-              if (Object.prototype.toString.call(e) == '[object HTMLLIElement]') {
-                e.childNodes.forEach(function (e) {
-                  if (Object.prototype.toString.call(e) == '[object HTMLUListElement]') {
-                    volantis.dom.$(e).hide()
+            let menuType = ''
+            // 关闭.menu-phone
+            Array.from(e.currentTarget.children).some(val => {
+              if(val.classList.contains('s-menu')) {
+                menuType = 'menu' // 代表点击的是一级菜单外层的icon
+                return
+              }
+              if(val.classList.contains('menuitem')) {
+                menuType = 'item' // 点击的是下拉一级菜单
+                return
+              }
+            })
+            if(menuType === 'item') {
+              // 关闭已经展开的子菜单, 这一步是针对点击多个拥有二级子菜单的一级菜单，关闭其他所有一级菜单的二级菜单
+              // ①
+              e.currentTarget.parentElement.childNodes.forEach(function (e2) {
+                if (Object.prototype.toString.call(e2) == '[object HTMLLIElement]') {
+                  e2.childNodes.forEach(function (e1) {
+                    if (Object.prototype.toString.call(e1) == '[object HTMLUListElement]') {
+                      volantis.dom.$(e1).hide()
+                    }
+                  })
+                }
+              })
+              // 点击展开二级子菜单
+
+              /* 
+                由于采用事件委托，因此此处点击， 两种情况，currentTarget指向菜单按钮a.s-menu和ul的共同父元素li， 第二，指向ul中的li元素，也就是子菜单
+                区分：情况一的第一个子元素a的类名是s-menu；情况二的子元素a的类名为menuitem
+                我们要点击外部的menu icon时要关闭的是.menu-phone而不是.menuitem
+              */
+              let array = e.currentTarget.children
+              for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                if (volantis.dom.$(element).title === 'menu') { // 移动端菜单栏异常
+                  volantis.dom.$(element).style.display = "flex"      // https://github.com/volantis-x/hexo-theme-volantis/issues/706
+                } else {
+                  volantis.dom.$(element).show()
+                }
+              }
+            } else {  
+              let menuPhone = document.querySelector('.switcher .menu-phone')
+              let isHiding = window.getComputedStyle(menuPhone).display === 'none'
+              if(isHiding) {
+                volantis.dom.$(menuPhone).show()
+              } else {
+                volantis.dom.$(menuPhone).hide()
+                // 别忘了再执行①
+                // 准备关闭所有二级菜单, 注意此时的e和点击一级菜单时候的e层级不同
+                // 此处好像不能使用变量存储的menuPhone？要重新查询
+                document.querySelector('.switcher .menu-phone').childNodes.forEach(function (e2) {
+                  if (Object.prototype.toString.call(e2) == '[object HTMLLIElement]') {
+                    e2.childNodes.forEach(function (e1) {
+                      if (Object.prototype.toString.call(e1) == '[object HTMLUListElement]') {
+                        volantis.dom.$(e1).hide()
+                      }
+                    })
                   }
                 })
               }
-            })
-            // 点击展开子菜单
-            let array = e.currentTarget.children
-            for (let index = 0; index < array.length; index++) {
-              const element = array[index];
-              if (volantis.dom.$(element).title === 'menu') { // 移动端菜单栏异常
-                volantis.dom.$(element).display = "flex"      // https://github.com/volantis-x/hexo-theme-volantis/issues/706
-              } else {
-                volantis.dom.$(element).show()
-              }
             }
+
           }, 0);
         }
       })
@@ -319,7 +370,7 @@ const VolantisApp = (() => {
     }
     fn.setPageHeaderMenuEvent();
   }
-
+  
   // 【移动端】隐藏子菜单
   fn.setPageHeaderMenuEvent = () => {
     if (!volantis.isMobile) return

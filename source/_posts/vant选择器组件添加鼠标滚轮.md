@@ -5,10 +5,9 @@ tags:
 - vue
 - js
 - mixin
+- patch-package
 - 原创
 ---
-# vant选择器组件添加鼠标滚轮
-
 ## 背景
 
 平常做前端开发的应该知道，在前端组件中，有两种组件
@@ -74,7 +73,7 @@ tags:
 
 ![image-20230526101205773](https://s2.loli.net/2023/05/26/jL4n6XUElsDQfWV.png)
 
-### chatGPT(最终解决方案)
+### chatGPT(解决方案1)
 
 #### 改组件
 
@@ -202,9 +201,110 @@ export const myMixin = {
 
 ```
 
-调用
+调用（需要再全部引用的地方都调用）
 
 ```js
  this.getpicker('picker',this.popupData.comSurList,()=>this.popupData.defaultIndex,(index)=>this.popupData.defaultIndex=index)
 ```
 
+我们能够看到他的缺点了，需要再所有的地方都去调用一次
+
+### 依赖包打补丁(最终解决，最简单)
+
+#### 更新vant到最新版本
+
+​	更新vant之后，我们可以发现vant的picker组件已经支持滚动滑轮了，但是每个滑轮滑动的过大，可能一次跳过两个选项，我们要进行修改
+
+#### 改源码
+
+​	改源码的方式有以下几种
+
+1. 提issues等待作者更新（莫不是在开玩笑）
+
+2. 将源码粘贴到component文件，然后全局改引用的位置（有一点点麻烦，项目也会变大，也有通过在webpack添加alis添加别名直接全局修改引用）
+
+3. 将源码仓库fork到自己的仓库，然后修改源码后，然后在自己项目中的npm修改一下包的位置后面的rep改成自己仓库的地址（但是记住千万别删这个仓库，否则以后你的项目就启不起来了）![image-20230602113406830](https://s2.loli.net/2023/06/02/U5JFRVLhG4DB8t7.png)
+
+4. 通过patch-package对源码包打补丁
+
+
+
+可以先了解一下[patch-package 的介绍](https://www.npmjs.com/package/patch-package#why-use-postinstall-postinstall-with-yarn)
+
+说白了就三步
+
+1. 装依赖
+2. 直接改源码
+3. 执行命令将改的源码变成diff文件
+4. packagejson添加钩子执行
+
+#### 安装一下patch package
+
+```bash
+npm i patch-package
+
+yarn add patch-package postinstall-postinstall
+```
+
+#### 改源码
+
+目录 node_modules->vant->picker->PickerColumn.js
+
+在node_modules中找到vant（注意不是@vant，那个可能是vant的一些补丁包）
+
+可以看到他的以下结构
+
+![image-20230602112430982](https://s2.loli.net/2023/06/02/enkMarQ6OuRidS1.png)
+
+全局搜索一下wheel，找到onMouseWheel的方法，可以除以一个倍数，让其流畅
+
+![image-20230602112752942](https://s2.loli.net/2023/06/02/iUHJE2TlPhdesOL.png)
+
+#### 编译补丁
+
+```bash
+npx patch-package package-name
+```
+
+此时我们可以看到根目录已经添加了一个patches文件了，查看文件发现是我们修改的相关位置
+
+![image-20230602113807614](https://s2.loli.net/2023/06/02/IiNKHrtLdAM9Tcp.png)
+
+#### 添加钩子
+
+默认会在packagejson中scripts添加一个钩子函数
+
+```json
+"postinstall": "patch-package",
+```
+
+他的意思是安装依赖的时候立马支持patch-package打补丁
+
+此时就可以测试一下，将node_modules删除后测试一下是否成功了
+
+#### 异常解决
+
+pm WARN lifecycle xxx.xxx.com@0.1.0~postinstall: cannot run in wd xxx.xxx.com@0.1.0 patch-package (wd=/node)
+
+我们部署线上的时候可能会出问题，因为有的docker安装依赖的时候工作目录可能不一致，可以尝试将钩子函数添加一个打包前执行,此时就会正常执行了
+
+```bash
+  "prebuild": "patch-package",
+```
+
+由于项目可能需要有不同环境的打包命令，所以可以以下
+
+![image-20230602114340633](https://s2.loli.net/2023/06/02/jfer6xRJtndo85h.png)
+
+```json
+ 	//开发环境需要
+	"postinstall": "patch-package",
+	//打包需要
+    "prebuild": "patch-package",
+    "prebuild:test": "patch-package",
+    "prebuild:feature1": "patch-package",
+    "prebuild:feature2": "patch-package",
+    "prebuild:prod": "patch-package"
+```
+
+于此，这项目就可以告别一段落
