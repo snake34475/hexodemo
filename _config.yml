@@ -106,6 +106,7 @@ theme: volantis
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:snake34475/snake34475.github.io.git
+  repo: https://github.com/snake34475/snake34475.github.io.git
+#  repo: git@github.com:snake34475/snake34475.github.io.git
   # repo: git@gitee.com:wanwhvjg-tengyao/wang-tengyao.git
   branch: develop
