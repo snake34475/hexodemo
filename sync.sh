@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#首先提交代码
-git pull origin master
-git add .
-git commit -m "通过sync脚本提交"
-git push origin master
+##首先提交代码
+#git pull origin master
+#git add .
+#git commit -m "通过sync脚本提交"
+#git push origin master
 
 #构建并发送到github
 hexo clean
 hexo g
-hexo d
+#hexo d
 
 #发包到服务器上
 # 请将以下变量替换为远程服务器和 SSH 私钥文件的真实信息
@@ -29,3 +29,4 @@ rm -rf  www.onestyle.top
 
 wait $!
 echo "scp传输执行完毕"
+hexo

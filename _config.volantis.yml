@@ -18,7 +18,7 @@ custom_css:
 
 sidebar:
   # 侧边栏组件库
-  for_page: [blogger, category, tagcloud,lastupdate,webinfo,donate]
+  for_page: [blogger, category, tagcloud,lastupdate,webinfo,donate,repos]
   widget_library:
     # ---------------------------------------
     # blogger info widget
@@ -32,6 +32,15 @@ sidebar:
       images:
 #        - https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
         - https://s2.loli.net/2023/05/24/T3Fe4XuIrdCRVn5.jpg
+
+    repos:
+      class: text
+      display: [ desktop ] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-award
+        title: 备案信息
+      content:
+        - '[豫ICP备2022018466号-2](https://beian.miit.gov.cn/)'
     webinfo:
       class: webinfo
       display: [ desktop ]
@@ -303,7 +312,7 @@ site_footer:
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # site copyright
-  copyright: '豫ICP备2022018466号-1'
+  copyright: '[豫ICP备2022018466号-2](https://beian.miit.gov.cn)'
 
 plugins:
   # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount

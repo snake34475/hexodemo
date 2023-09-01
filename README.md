@@ -33,7 +33,12 @@ hexo g
 hexo d
 ```
 
-## 整合提交
+## docker开发
+```shell
+docker-compose up -d
+```
+
+## 整合提交 (已经弃用因服务器到期，但其思路仍可借鉴)
 ```shell
 yarn sync
 ```
