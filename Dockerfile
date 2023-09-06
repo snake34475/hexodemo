@@ -7,13 +7,12 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安装项目依赖
-RUN npm install
-
-RUN npm install hexo-cli -g
+RUN npm install \
+    && npm install hexo-cli -g
 
 
 # 构建生产环境静态文件
-RUN npm run build
+# RUN npm run build
 
 # 设置容器启动命令
 CMD ["hexo","s"]
