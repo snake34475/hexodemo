@@ -1750,7 +1750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1706091160162),
+    lastupdate: new Date(1706888394434),
     sidebar: {
       for_page: ["blogger","category","tagcloud","lastupdate","webinfo","donate","repos"],
       for_post: ["toc"],
@@ -2714,7 +2714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>他的意思是安装依赖的时候立马支持patch-package打补丁</p>
 <p>此时就可以测试一下，将node_modules删除后测试一下是否成功了</p>
-<h4 id="异常解决"><a href="#异常解决" class="headerlink" title="异常解决"></a>异常解决</h4><p>pm WARN lifecycle <a href="mailto:&#x78;&#120;&#x78;&#x2e;&#x78;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;&#64;&#48;&#46;&#x31;&#46;&#x30;">&#x78;&#120;&#x78;&#x2e;&#x78;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;&#64;&#48;&#46;&#x31;&#46;&#x30;</a>~postinstall: cannot run in wd <a href="mailto:&#x78;&#120;&#x78;&#46;&#120;&#x78;&#120;&#x2e;&#x63;&#111;&#109;&#64;&#48;&#46;&#49;&#x2e;&#48;">&#x78;&#120;&#x78;&#46;&#120;&#x78;&#120;&#x2e;&#x63;&#111;&#109;&#64;&#48;&#46;&#49;&#x2e;&#48;</a> patch-package (wd&#x3D;&#x2F;node)</p>
+<h4 id="异常解决"><a href="#异常解决" class="headerlink" title="异常解决"></a>异常解决</h4><p>pm WARN lifecycle <a href="mailto:&#x78;&#120;&#x78;&#46;&#x78;&#x78;&#120;&#x2e;&#99;&#x6f;&#109;&#64;&#48;&#x2e;&#x31;&#x2e;&#48;">&#x78;&#120;&#x78;&#46;&#x78;&#x78;&#120;&#x2e;&#99;&#x6f;&#109;&#64;&#48;&#x2e;&#x31;&#x2e;&#48;</a>~postinstall: cannot run in wd <a href="mailto:&#x78;&#120;&#x78;&#x2e;&#x78;&#120;&#120;&#x2e;&#x63;&#x6f;&#109;&#64;&#48;&#x2e;&#x31;&#x2e;&#x30;">&#x78;&#120;&#x78;&#x2e;&#x78;&#120;&#120;&#x2e;&#x63;&#x6f;&#109;&#64;&#48;&#x2e;&#x31;&#x2e;&#x30;</a> patch-package (wd&#x3D;&#x2F;node)</p>
 <p>我们部署线上的时候可能会出问题，因为有的docker安装依赖的时候工作目录可能不一致，可以尝试将钩子函数添加一个打包前执行,此时就会正常执行了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;prebuild&quot;</span>: <span class="string">&quot;patch-package&quot;</span>,</span><br></pre></td></tr></table></figure>
 

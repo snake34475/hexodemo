@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://www.onestyle.top/archives/2022/10/"/>
+  
+  <link rel="canonical" href="http://www.onestyle.top/2024/02/02/git自动合并分支提交/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,17 +34,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2022/10 - 笑然博客</title>
+  <title>git自动合并分支提交 - 笑然博客</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="tengyao博客网站 - tengyao - 笑然博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="笑然博客">
-<meta property="og:url" content="http://www.onestyle.top/archives/2022/10/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git自动合并分支提交">
+<meta property="og:url" content="http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/index.html">
 <meta property="og:site_name" content="笑然博客">
-<meta property="og:description" content="tengyao博客网站">
+<meta property="og:description" content="平常业务开发的同学，应该经常性的会遇到git提交，git合并。尤其是改bug的时候，我们需要频繁的在开发分支开发修复&#x3D;》合并到测试分支，发布测试分支。这其中要敲击数个命令。对我们程序员来说，重复的运动就是对我们的侮辱！我们要使用其他办法克服他！  由于多数git提交工具无法合并的时候添加注释，但是公司要求提交与合并须添加注释，因此需要merge添加注释 git提交要求分支约定master">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-02-02T15:38:42.000Z">
+<meta property="article:modified_time" content="2024-02-02T15:39:26.796Z">
 <meta property="article:author" content="tengyao">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2173,7 +2175,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2430,7 +2432,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://fastly.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2507,28 +2509,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://www.onestyle.top/2022/10/14/同步笔记的几种方式/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://www.onestyle.top/2024/02/02/git自动合并分支提交/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="笑然博客">
   </span>
@@ -2537,253 +2519,367 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="tengyao博客网站">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/10/14/%E5%90%8C%E6%AD%A5%E7%AC%94%E8%AE%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"  itemprop="url">
-        同步笔记的几种方式
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+    
+    
+      <h1 class="title" itemprop="name headline">
+        git自动合并分支提交
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-02-02T23:38:42+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024-02-02</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="git自动合并分支提交" data-path="/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+             
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：3k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：12 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p><strong>平常业务开发的同学，应该经常性的会遇到git提交，git合并。尤其是改bug的时候，我们需要频繁的在开发分支开发修复&#x3D;》合并到测试分支，发布测试分支。这其中要敲击数个命令。对我们程序员来说，重复的运动就是对我们的侮辱！我们要使用其他办法克服他！</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/iLMxXcG1gIyD8BK.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/iLMxXcG1gIyD8BK.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="侮辱"></p>
+<p><strong>由于多数git提交工具无法合并的时候添加注释，但是公司要求提交与合并须添加注释，因此需要merge添加注释</strong></p>
+<h2 id="git提交要求"><a href="#git提交要求" class="headerlink" title="git提交要求"></a>git提交要求</h2><h3 id="分支约定"><a href="#分支约定" class="headerlink" title="分支约定"></a>分支约定</h3><p><strong>master：主分支</strong></p>
+<p><strong>develop：测试主分支</strong></p>
+<p><strong>hotfix-日期：线上修复分支</strong></p>
+<p><strong>jira-ID：开发分支，开发完成后合并测试分支，产品验收通过后合并master</strong></p>
+<h3 id="提交规范"><a href="#提交规范" class="headerlink" title="提交规范"></a>提交规范</h3><p><strong>格式：</strong><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt; &lt;body&gt;</code></p>
+<p><strong>type：说明本次commit的类别，只允许下面标识</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>type</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>样例</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>feat</strong></td>
+<td><strong>新功能开发</strong></td>
+<td><strong>新的功能、模块、工具</strong></td>
+</tr>
+<tr>
+<td><strong>fix</strong></td>
+<td><strong>修复bug</strong></td>
+<td><strong>提测后的bug、线上的bug</strong></td>
+</tr>
+<tr>
+<td><strong>docs</strong></td>
+<td><strong>修改文档</strong></td>
+<td><strong>readme等</strong></td>
+</tr>
+<tr>
+<td><strong>style</strong></td>
+<td><strong>修改css</strong></td>
+<td><strong>只改了css</strong></td>
+</tr>
+<tr>
+<td><strong>refactor</strong></td>
+<td><strong>重构代码</strong></td>
+<td><strong>重写了某个插件、库等</strong></td>
+</tr>
+<tr>
+<td><strong>chore</strong></td>
+<td><strong>更新依赖或库</strong></td>
+<td><strong>更新依赖库版本等</strong></td>
+</tr>
+</tbody></table>
+<p><strong>scope（非必要）：影响范围。</strong></p>
+<p><strong>subject：commit描述，简洁清晰，必须“动词” + 文字，控制在20字以内。</strong></p>
+<p><strong>body（非必要）：subject的详细说明。</strong></p>
+<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><p><strong>多人协作需多pull代码</strong></p>
+<p><strong>看完我的表情就是这样的</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/tDXUsk2irCKxypA.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/tDXUsk2irCKxypA.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="萌新"></p>
+<p><strong>其实举个例子就简单了，比如说我们本次改了一个弹窗，只有单一页面使用我们就可以说</strong></p>
+<blockquote>
+<p><strong>fix(用户详情页):调整了弹窗的文案</strong></p>
+</blockquote>
+<h2 id="git合并代码复习"><a href="#git合并代码复习" class="headerlink" title="git合并代码复习"></a>git合并代码复习</h2><p><strong>首先，我们复习一下修复bug需要提交的命令</strong></p>
+<p><strong>假设开发分支为jira-9527</strong></p>
+<p><strong>测试分支为 develop</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 开发分支</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;fix：修复xx页面xx功能&quot;</span><br><span class="line">git pull origin jira-9527 # 同步其他人的代码</span><br><span class="line">git push origin jira-9527</span><br><span class="line"></span><br><span class="line">git checkout develop</span><br><span class="line"># 测试分支</span><br><span class="line">git pull origin jira-9527</span><br><span class="line">git merge jira-9527 --no-ff -m &quot;fix：修复xx页面xx功能&quot;</span><br><span class="line">git push origin develop</span><br><span class="line">git checkout jira-9527 </span><br></pre></td></tr></table></figure>
+
+<p><strong>我们可以发现，我们修改一个bug，需要敲击这9行命令，这9行命令有极大的可能敲错，尤其是开发分支，我们的分支一般是产品分给我们一个jira号，这个号通常是不规律的，忘记开发分支需要重复的去查找，这几个命令敲下来，少说得有30s。</strong></p>
+<p><strong>让我们再看看加上线上环境的bug修复</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># 开发分支</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;fix：修复xx页面xx功能&quot;</span><br><span class="line">git pull origin jira-9527 # 同步其他人的代码</span><br><span class="line">git push origin jira-9527</span><br><span class="line"></span><br><span class="line">git checkout develop</span><br><span class="line"># 测试分支</span><br><span class="line">git pull origin develop</span><br><span class="line">git merge jira-9527 --no-ff -m &quot;fix：修复xx页面xx功能&quot;</span><br><span class="line">git push origin develop</span><br><span class="line"></span><br><span class="line">git checkout master</span><br><span class="line"># 线上</span><br><span class="line">git pull origin master</span><br><span class="line">git merge jira-9527 --no-ff -m &quot;fix：修复xx页面xx功能&quot;</span><br><span class="line">git push origin master</span><br><span class="line">git checkout jira-9527 </span><br></pre></td></tr></table></figure>
+
+<p><strong>修复一个线上bug我们需要同时提交测试分支，线上分支，因而我们又需要多敲几行，又多了45秒</strong></p>
+<p><strong>来让我们看一下我平常的提交状态</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/6d9sOiZ3CpHyYw7.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/6d9sOiZ3CpHyYw7.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240202142141597"></p>
+<p><strong>57个提交！假设57个提交中，一半是提交开发分支，一半是测试分支，大概就是需要敲击29次上方的命令，29*30s，一天大概有15分钟我们是再敲这个枯燥的命令，并且敲这些命令对我们个人没有任何的提升，不行，得改变，不能让这些毫无意义的事情发生，每天省出的15分钟还能够让自己多摸鱼。</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/4lZ8QJFLnONzhAD.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/4lZ8QJFLnONzhAD.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="摸鱼"></p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p><strong>我们首先要明白，如果要让脚本自动化，我们一定要记录自己的命令，我又不希望安装一些例如node，java等框架或库，我就让我们的电脑能直接运行，于是我使用了bash，那bash是什么呢？</strong></p>
+<p><strong>维基百科：Bash是一个命令处理器，通常运行于文本窗口中，并能执行用户直接输入的命令。Bash还能从文件中读取命令，这样的文件称为脚本。</strong></p>
+<p><strong>好了，我们明白了，bash能够在窗口使用命令，也能够执行后缀为.bash的文件中的命令。我们平常的git命令完全就可以贴进去了</strong></p>
+<h2 id="最简单的bash"><a href="#最简单的bash" class="headerlink" title="最简单的bash"></a>最简单的bash</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">message=&quot;feat(博客首页)：我加了两个页面，你们都让开！&quot; #message消息</span><br><span class="line">curBranch=&#x27;jira-9528&#x27; #当前的分支</span><br><span class="line">branch=&#x27;develop&#x27; #要提交的分支</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;$message&quot;</span><br><span class="line">git pull origin &quot;$curBranch&quot;</span><br><span class="line">git push origin &quot;$curBranch&quot;</span><br><span class="line"></span><br><span class="line">git checkout &quot;$branch&quot;</span><br><span class="line">git pull origin &quot;$branch&quot;</span><br><span class="line">git merge &quot;$curBranch&quot; --no-ff -m &quot;$message&quot; </span><br><span class="line">git push origin &quot;$branch&quot;</span><br><span class="line"></span><br><span class="line">#可以新建一个test.bash文件，将这个文件中的所有内容粘贴进去</span><br><span class="line">#bash test.bash 就可以运行以上命令</span><br></pre></td></tr></table></figure>
+
+<p><strong>可能聪明的同学就要问了，</strong><code>#!/bin/bash</code>这个是什么，他是预先告诉处理器他是个什么东西，例如我们使用 <code>bash test.bash</code>的命令执行时，我们已经告诉处理器这是个bash文件了，但是也有人喜欢使用 <code>. test.bash</code>这个时候处理器就不知道这个脚本到底是什么东西，因而无法进行正常编译</p>
+<p><strong>我们看上面使用了一个message赋值，下方使用的时候使用$message,这样直接可以使用message变量，是的，你已经学会了bash脚本如何使用变量赋值了，奇怪的知识钻进了脑门。我们再着重一下，在设置变量的时候，不需要使用$,在使用的时候需要加上$。</strong></p>
+<blockquote>
+<p><strong>有一个小坑，在使用变量声明的时候等号要紧贴着左边的变量，否则会导致赋值不上去，例如</strong> <code>test =2是不可以的</code></p>
+</blockquote>
+<p><strong>同样我们看引号，通常定义变量使用双引号，使用单引号在shell中会不被认为是变量，例如使用</strong> <code>git checkout &#39;$branch&#39;</code>不可以，因为使用了单引号</p>
+<h2 id="bash-for循环的使用"><a href="#bash-for循环的使用" class="headerlink" title="bash for循环的使用"></a>bash for循环的使用</h2><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p><strong>在使用for循环之前，我们需要先了解一个小知识，就是数组类型，这个数组可能和我们之前认识的不太一样，他可以使用下标方法添加，或者使用扩号的方法添加，访问使用</strong> <code>$&#123;arr[下标]&#125;</code>就行取出。</p>
+<p><strong>使用@或者*可以打印出里面所有的枚举值</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#下标的方法</span><br><span class="line">arr[0]=&quot;第一&quot;</span><br><span class="line">arr[1]=&quot;第二&quot;</span><br><span class="line">echo &quot;$&#123;arr[0]&#125;&quot; #第一 </span><br><span class="line">echo &quot;$&#123;arr[1]&#125;&quot; #第二</span><br><span class="line"></span><br><span class="line">#括号的方法添加</span><br><span class="line">arr=(&quot;第一&quot; &quot;第二&quot;) #使用空格隔开</span><br><span class="line">arr+=(&quot;第三&quot;)</span><br><span class="line">echo &quot;$&#123;arr[0]&#125;&quot; #第一</span><br><span class="line">echo &quot;$&#123;arr[1]&#125;&quot; #第二</span><br><span class="line">echo &quot;$&#123;arr[2]&#125;&quot; #第三</span><br><span class="line">echo &quot;$&#123;arr[*]&#125;&quot; #第一 第二 第三</span><br><span class="line">echo &quot;$&#123;arr[@]&#125;&quot; #第一 第二 第三</span><br></pre></td></tr></table></figure>
+
+<p><strong>遍历数组</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">arr[0]=&quot;第一&quot;</span><br><span class="line">arr[1]=&quot;第二&quot;</span><br><span class="line"></span><br><span class="line">for i in &quot;$&#123;!arr[@]&#125;&quot;  #此处需注意，使用了!感叹号，使用感叹号说明要使用他的下标而不是value</span><br><span class="line">do </span><br><span class="line"> echo The key value of element &quot;$&#123;arr[$i]&#125;&quot; is &quot;$i&quot; #循环中做些什么</span><br><span class="line">done #表示结束</span><br><span class="line"></span><br><span class="line">#The key value of element 第一 is 0</span><br><span class="line">#The key value of element 第二 is 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="优化的git提交"><a href="#优化的git提交" class="headerlink" title="优化的git提交"></a>优化的git提交</h3><p><strong>这个时候我们来吧之前的git提交代码重写一下</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">message=&quot;feat(博客首页)：我加了两个页面，你们都让开！&quot; #message消息</span><br><span class="line">curBranch=&#x27;jira-9528&#x27; #当前的分支</span><br><span class="line">branchArr=(&#x27;develop&#x27; &#x27;master&#x27;) #要提交的分支</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;$message&quot;</span><br><span class="line">git pull origin &quot;$curBranch&quot;</span><br><span class="line">git push origin &quot;$curBranch&quot;</span><br><span class="line"></span><br><span class="line"># 提交命令行参数中的分支代码</span><br><span class="line">for branch in &quot;$&#123;branchArr[@]&#125;&quot;; do</span><br><span class="line">  git checkout &quot;$branch&quot;</span><br><span class="line">  git pull origin &quot;$branch&quot;</span><br><span class="line">  git merge &quot;$curBranch&quot; --no-ff -m &quot;$message&quot;</span><br><span class="line">  git push origin &quot;$branch&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><strong>怎么样？这样是不是感觉很简单？</strong></p>
+<p><strong>但是我们会发现，我们的当前分支，要提交的分支，和message这些都是死的，每次我们都需要改这个文件再去提交，这样当然不符合我们操作习惯，还不如之前方便。我们仍然需要进行依次优化</strong></p>
+<h2 id="bashz自定义命令"><a href="#bashz自定义命令" class="headerlink" title="bashz自定义命令"></a>bashz自定义命令</h2><h3 id="whilte循环"><a href="#whilte循环" class="headerlink" title="whilte循环"></a>whilte循环</h3><p><strong>在学习之前，我们先了解一下while do循环，while do与其他编程语言一致，只要括号中的条件为真，就一直执行其中的命令，通常用于逐行读取文本</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i=10</span><br><span class="line">while [ $i -gt 0 ];  # -gt 大于 -lt 小于</span><br><span class="line">do  </span><br><span class="line">((i=i-1)) #如果使用计算需要使用双括号括起来</span><br><span class="line">echo 这是我吃的第&quot;$i&quot;顿饭</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="case的使用"><a href="#case的使用" class="headerlink" title="case的使用"></a>case的使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">expression=&quot;a&quot;</span><br><span class="line">case $expression in</span><br><span class="line">    a)</span><br><span class="line">       echo 吃饭</span><br><span class="line">        ;; #必须使用分号进行分割子项</span><br><span class="line">    b)</span><br><span class="line">      echo  睡觉</span><br><span class="line">        ;;</span><br><span class="line">    c)</span><br><span class="line">       echo 打豆豆</span><br><span class="line">        ;;</span><br><span class="line">    *) #类似于default</span><br><span class="line">       echo 啥也不干</span><br><span class="line">        ;;</span><br><span class="line">esac #case结束，用来关闭case语句</span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义命令"><a href="#自定义命令" class="headerlink" title="自定义命令"></a>自定义命令</h3><p><strong>getopts命令，在使用命令的时候，例如npm,会使用 -v,等选项来查看版本</strong></p>
+<p><strong>我们再写bash脚本的时候，也可自定义选项参数，并且使用getopts解析选项参数</strong></p>
+<p><code>getopts optstring name [args]</code></p>
+<p><code>optstring</code>参数支持的选项列表，一个<strong>字符</strong>表示一个选项，字符后有冒号，说明跟着一个参数，不能使用:冒号和?问号作为选项</p>
+<p><strong>我们来举例几个</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">getopts &quot;hi&quot; name # -h是选项 -i是选项都没参数</span><br><span class="line">getopts &quot;hi:&quot; name # -h是选项 -i是选项并且-i有参数</span><br><span class="line">getopts &quot;h:i:&quot; name # -h是选项并且-h有参数 -i是选项并且-i有参数</span><br><span class="line">getopts &quot;:h:i:&quot; name # -h是选项并且-h有参数 -i是选项并且-i有参数 前方的引号一般用于容错表示前方有参数</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>name</code> 每次调用name，直接解析一个参数，并且把解析值放到name中，并且不包含-字符。</p>
+<p><strong>通常在解析的时候，使用while或for循环多次执行gtopts命令直到完毕为止</strong></p>
+<p><code>[args]</code>为可选参数</p>
+<p><strong>来练习一下getopts吧</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># test.bash文件</span><br><span class="line">while getopts &quot;:hvm:&quot; name; do</span><br><span class="line">case $name in</span><br><span class="line">    h)</span><br><span class="line">        echo 这里提供一些帮助的信息</span><br><span class="line">        ;;</span><br><span class="line">    v)</span><br><span class="line">        echo 当前版本为1.0</span><br><span class="line">        ;;</span><br><span class="line">    m)</span><br><span class="line">        echo 我有一些话给你说：$OPTARG # $OPTARG能获取到之后的输入信息</span><br><span class="line">        ;;</span><br><span class="line">    *)</span><br><span class="line">        echo 这里什么都没有，换一种命令吧 </span><br><span class="line">        ;;</span><br><span class="line">esac</span><br><span class="line">done</span><br><span class="line">#测试一下以下的命令吧</span><br><span class="line"># bash test.bash -h</span><br><span class="line"># bash test.bash -g</span><br><span class="line"># bash test.bash -v</span><br><span class="line"># bash test.bash -m 我手机忘带了</span><br></pre></td></tr></table></figure>
+
+<p><strong>有小伙伴讲这太简单了，这不有手都会？</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/wbEvfmT7oSrVXnW.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/wbEvfmT7oSrVXnW.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><strong>来让我们加点注释把所有的方案一起实现</strong></p>
+<h2 id="最终解决方案"><a href="#最终解决方案" class="headerlink" title="最终解决方案"></a>最终解决方案</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#gitpush.bash 文件夹</span><br><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line"># 获取命令行参数</span><br><span class="line">while getopts &quot;:b:m:&quot; opt; do</span><br><span class="line">  case $opt in</span><br><span class="line">    b) branchArr+=(&quot;$OPTARG&quot;);;</span><br><span class="line">    m) message=&quot;$OPTARG&quot;;;</span><br><span class="line">    \?) echo &quot;无效的选项: -$OPTARG&quot; &gt;&amp;2; exit 1;;</span><br><span class="line">  esac</span><br><span class="line">done</span><br><span class="line">shift $((OPTIND -1))  # 将已解析的选项参数移除</span><br><span class="line"></span><br><span class="line"># 获取当前分支</span><br><span class="line">curBranch=$(git rev-parse --abbrev-ref HEAD)</span><br><span class="line">echo &quot;当前分支为: $curBranch&quot;</span><br><span class="line"></span><br><span class="line"># 提交当前分支代码</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;$message&quot;</span><br><span class="line">git pull origin &quot;$curBranch&quot;</span><br><span class="line">git push origin &quot;$curBranch&quot;</span><br><span class="line"></span><br><span class="line"># 提交命令行参数中的分支代码</span><br><span class="line">for branch in &quot;$&#123;branchArr[@]&#125;&quot;; do</span><br><span class="line">  git checkout &quot;$branch&quot;</span><br><span class="line">  git pull origin &quot;$branch&quot;</span><br><span class="line">  git merge &quot;$curBranch&quot; --no-ff -m &quot;$message&quot;</span><br><span class="line">  git push origin &quot;$branch&quot;</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># 切回当前分支</span><br><span class="line">git checkout &quot;$curBranch&quot;</span><br><span class="line"></span><br><span class="line">echo &quot;全部提交成功，已切回当前分支: $curBranch&quot;</span><br><span class="line"></span><br><span class="line"># 使用方法 将此文件放到项目文件的外侧</span><br><span class="line"># ../gitpush.bash -b branch1 branch2 -m &quot;提交信息&quot;</span><br></pre></td></tr></table></figure>
+
+<p><strong>通常开发的时候我更倾向于以下结构,因为不会影响影响其他项目</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|----buscode #公司项目目录</span><br><span class="line">|           |----项目A</span><br><span class="line">|           |----项目B</span><br><span class="line">|           |----gitppush.bash #脚本文件</span><br></pre></td></tr></table></figure>
+
+<p><strong>终于肝完了，这篇文章是于2月2日加班通宵之空隙完成的，因为提交的bug太多，实在是难受，因而学bash为了省时间。希望能够帮助到你</strong></p>
+<p><img src="https://s2.loli.net/2024/02/02/gedZLwAthSDvVTl.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/02/02/gedZLwAthSDvVTl.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>**	**【1】<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_36028920/article/details/112494187">getopts 可选参数_Bash技巧：介绍 getopts 内置命令解析选项参数的用法</a></p>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-14T18:25:57+08:00">2022-10-14</time>
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2022/10/14/%E5%90%8C%E6%AD%A5%E7%AC%94%E8%AE%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-02-02T23:39:26+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年2月2日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://www.onestyle.top/2022/10/14/开发效率软件/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="笑然博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="笑然博客">
-    <meta itemprop="description" content="tengyao博客网站">
-  </span>
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/&title=git自动合并分支提交 - 笑然博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/&title=git自动合并分支提交 - 笑然博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/&title=git自动合并分支提交 - 笑然博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/01/24/json-parse%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%BA%BF%E4%B8%8Abug%E6%8E%92%E6%9F%A5/'>
+          <p class='title'>json.parse记录一次线上bug排查<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>最近项目中有一个匪夷所思的问题，业务在使用的时候，偶发性的会白屏，经常下班的时候骚扰我们，开发苦不堪言，经过长达一周的排查，仍然没有查到bug的存在，最终尝试通过添加埋点日志，记录关键信息。
+现...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/10/14/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E8%BD%AF%E4%BB%B6/"  itemprop="url">
-        开发效率软件
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        cover一款window文件系统折叠标签页的软件，缺点是肯定比原生卡顿，原开发者将他卖给第三方，第三方一直植入病毒并且要不回来，建议断网使用
-下载：从网上直接搜索
-2.wox快速检索window软件，类似iphone的搜索功能，快捷键alt+space，在github中有开源项目和evething搭配能够搜索文件
 
-3.everything一款快速检索查找文件的软件，速度特别快
+    <div id="layoutHelper-comments"></div>
 
-4.命令...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-14T17:59:52+08:00">2022-10-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url"><span itemprop="name">软件</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/10/14/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E8%BD%AF%E4%BB%B6/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://www.onestyle.top/2022/10/14/webstrom使用指南和vscode对比/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="笑然博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="笑然博客">
-    <meta itemprop="description" content="tengyao博客网站">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/10/14/webstrom%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8Cvscode%E5%AF%B9%E6%AF%94/"  itemprop="url">
-        webstrom使用指南和vscode对比
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        我是占位符--- 
+  </article>
 
 
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-14T14:25:30+08:00">2022-10-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url"><span itemprop="name">软件</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/10/14/webstrom%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8Cvscode%E5%AF%B9%E6%AF%94/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://www.onestyle.top/2022/10/08/番茄闹钟/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="笑然博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="笑然博客">
-    <meta itemprop="description" content="tengyao博客网站">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/10/08/%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/"  itemprop="url">
-        番茄闹钟
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        ​ 番茄工作法让我们保持和自己的对话，观察自己而不是欺骗自己。在任何时候，如果你发现自己在发短信而不是专心完成目标，别担心，因为下一个番茄工作时间会更顺利。请对自己温柔点
-​ 对于很多人来说，时间就是敌人，截止日期逼近的时候，学习效率低下，发展成了拖延症，使用番茄工作法，正视工作和学习，时间是盟友，我们用自己方法去完成并不断提高自己的学习效率
-关于我们个人目标 1 计算时间
-一个番茄时间必须...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-08T15:18:39+08:00">2022-10-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" itemprop="url"><span itemprop="name">学习方法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/10/08/%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
-	
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2792,288 +2888,64 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://s2.loli.net/2023/02/01/QT9rs6EoO7Xq4I5.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>滕笑然</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">笑然博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/git/" href="/categories/git/"
-            active-action="action-categoriesgit"
-            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/node/" href="/categories/node/"
-            active-action="action-categoriesnode"
-            ><div class='name'>node</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/typescript/" href="/categories/typescript/"
-            active-action="action-categoriestypescript"
-            ><div class='name'>typescript</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" href="/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"
-            active-action="action-categoriesE5ADA6E4B9A0E696B9E6B395"
-            ><div class='name'>学习方法</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BD%AF%E4%BB%B6/" href="/categories/%E8%BD%AF%E4%BB%B6/"
-            active-action="action-categoriesE8BDAFE4BBB6"
-            ><div class='name'>软件</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/chatgpt/" style="font-size: 14px; color: #999">chatgpt</a> <a href="/tags/js/" style="font-size: 14px; color: #999">js</a> <a href="/tags/jwt/" style="font-size: 14px; color: #999">jwt</a> <a href="/tags/mixin/" style="font-size: 14px; color: #999">mixin</a> <a href="/tags/patch-package/" style="font-size: 14px; color: #999">patch-package</a> <a href="/tags/vue/" style="font-size: 14px; color: #999">vue</a> <a href="/tags/%E5%8E%9F%E5%88%9B/" style="font-size: 24px; color: #555">原创</a> <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 14px; color: #999">宝塔</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 14px; color: #999">微信小程序</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 19px; color: #777">游戏</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 14px; color: #999">硬件</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 19px; color: #777">网络</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 14px; color: #999">运维</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/"><div class="item"><time>2024-02-02</time></div><span>git自动合并分支提交</span></a></li><li><a class="widget-last" href="/2024/01/24/json-parse%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%BA%BF%E4%B8%8Abug%E6%8E%92%E6%9F%A5/"><div class="item"><time>2024-01-24</time></div><span>json.parse记录一次线上bug排查</span></a></li><li><a class="widget-last" href="/2024/01/17/umi2%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%BC%98%E5%8C%96/"><div class="item"><time>2024-01-24</time></div><span>umi2项目打包优化</span></a></li><li><a class="widget-last" href="/2022/10/08/%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/"><div class="item"><time>2024-01-17</time><span>学习方法</span></div><span>番茄闹钟</span></a></li><li><a class="widget-last" href="/2022/08/29/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%A2%E6%9C%8D%E5%8A%9F%E8%83%BD/"><div class="item"><time>2024-01-17</time></div><span>微信小程序客服功能</span></a></li></ul>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>22 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>19k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-02-02 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget qrcode desktop mobile pjax">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://s2.loli.net/2023/05/24/T3Fe4XuIrdCRVn5.jpg'
-      
-        height='200px'
-      />
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>备案信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">豫ICP备2022018466号-2</a></p>
-
-    
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E6%8F%90%E4%BA%A4%E8%A6%81%E6%B1%82"><span class="toc-text">git提交要求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%BA%A6%E5%AE%9A"><span class="toc-text">分支约定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83"><span class="toc-text">提交规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C"><span class="toc-text">多人协作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E5%90%88%E5%B9%B6%E4%BB%A3%E7%A0%81%E5%A4%8D%E4%B9%A0"><span class="toc-text">git合并代码复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-text">分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84bash"><span class="toc-text">最简单的bash</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bash-for%E5%BE%AA%E7%8E%AF%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">bash for循环的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%E7%9A%84git%E6%8F%90%E4%BA%A4"><span class="toc-text">优化的git提交</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bashz%E8%87%AA%E5%AE%9A%E4%B9%89%E5%91%BD%E4%BB%A4"><span class="toc-text">bashz自定义命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#whilte%E5%BE%AA%E7%8E%AF"><span class="toc-text">whilte循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#case%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">case的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%91%BD%E4%BB%A4"><span class="toc-text">自定义命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">最终解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3093,13 +2965,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3108,14 +2981,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4193,7 +4066,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"笑然博客","url":"http://www.onestyle.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/","sameAs":["https://github.com/volantis-x"],"description":"tengyao博客网站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://www.onestyle.top/","name":"笑然博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://www.onestyle.top/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://www.onestyle.top/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://www.onestyle.top/archives/2022/10/","name":"10月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"笑然博客","url":"http://www.onestyle.top/","keywords":null,"description":"tengyao博客网站","author":{"@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/","description":"tengyao博客网站"},"publisher":{"@type":"Organization","name":"笑然博客","url":"http://www.onestyle.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://www.onestyle.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"tengyao博客网站","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/"},"publisher":{"@type":"Organization","name":"笑然博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"笑然博客","url":"http://www.onestyle.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/","sameAs":["https://github.com/volantis-x"],"description":"tengyao博客网站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://www.onestyle.top/","name":"笑然博客"}},{"@type":"ListItem","position":3,"item":{"@id":"http://www.onestyle.top/2024/02/02/git自动合并分支提交/","name":"git自动合并分支提交"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"笑然博客","url":"http://www.onestyle.top/","keywords":null,"description":"tengyao博客网站","author":{"@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/","description":"tengyao博客网站"},"publisher":{"@type":"Organization","name":"笑然博客","url":"http://www.onestyle.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://www.onestyle.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"git自动合并分支提交","description":"tengyao博客网站","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/"},"author":{"@type":"Person","name":"tengyao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.onestyle.top/"},"publisher":{"@type":"Organization","name":"笑然博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://www.onestyle.top/2024/02/02/git%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4/","wordCount":0,"datePublished":"2024-02-02T15:38:42.000Z","dateModified":"2024-02-02T15:39:26.796Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
